@@ -13,12 +13,12 @@ console.log(__dirname);
 // })
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, 'build')));
+// app.use(express.static(path.join(__dirname, 'build')));
 
-// Serve the 'index.html' file from the 'build' directory
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+// // Serve the 'index.html' file from the 'build' directory
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// });
 const PORT = 5000;
 // Load existing employee records
 // let employees;
@@ -76,6 +76,9 @@ let empsort= [...employees];
 // }
   
 app.use(bodyParser.json());
+app.get('/',(req,res)=>{
+  res.send("working success");
+})
 app.get('/getAllEmployee', (req, res) => {
     try {
         res.status(200).json({msg:"hello"});
