@@ -5,13 +5,13 @@ const path=require('path');
 const cors = require('cors');
 const app = express();
 
-console.log(__dirname);
+// console.log(__dirname);
 // Serve static files from the 'client' directory
 // app.get('/',(req,res)=>{
 //     app.use(express.static(path.resolve(__dirname,'build')))
 //     res.sendFile(path.resolve(__dirname,'build','index.html'))
 // })
-app.use(cors());
+// app.use(cors());
 
 // app.use(express.static(path.join(__dirname, 'build')));
 
@@ -76,6 +76,7 @@ let empsort= [...employees];
 // }
   
 app.use(bodyParser.json());
+
 app.get('/',(req,res)=>{
   res.send("working success");
 })
