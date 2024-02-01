@@ -1,0 +1,96 @@
+/* EmployeesPage.css
+.employees-page {
+    padding: 20px;
+  }
+  
+  .employees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .employee-details {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .employee-details h2 {
+    margin-top: 0;
+  }
+  
+  .employee-details p {
+    margin: 5px 0;
+  }
+  
+  .employee-details button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .employee-details button:hover {
+    background-color: #0056b3;
+  }
+  
+  .employee-details form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+   */
+  .employees-grid{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    border: 2px solid #070707;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .body{
+        
+        margin: 10px;
+        padding: 5px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #91e3ee;
+    padding: 10px;
+  }
+  
+  input {
+    padding: 6px;
+    background-color: azure;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .search-button {
+      margin-top: 10px;
+    }
+  }
+  
+  
